@@ -1,0 +1,13 @@
+var OOO = {
+    color: "#cd0000",
+    element: $("#text"),
+    events: function() {
+        $("input[type='button']").addEventListener("click", function(e) {
+            this.element.style.color = this.color;
+        }.bind(this));
+        return this;
+    },
+    init: function() {
+        this.events();
+    }
+};

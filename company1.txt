@@ -1,0 +1,366 @@
+﻿{
+"im":[
+{ 
+	"items":[{
+	"company":"米络科技（KK直播）",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/101.png"
+},
+
+{
+	"company":"二维火",
+	"Interview_evaluation":"140",
+	"position":"68",
+	"deal":"74%",
+	"intro":"在移动互联网时代打造最具有价值的本地生活服务类产品",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/102.jpg"
+},
+{
+	"company":"答疑君",
+	"Interview_evaluation":"33",
+	"position":"5",
+	"deal":"92%",
+	"intro":"名校家教第一品牌",
+	"type":"移动互联网",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/103.png"
+},
+{
+	"company":"伯瑞英语ABC360",
+	"Interview_evaluation":"31",
+	"position":"62",
+	"deal":"68%",
+	"intro":"English for All. 伯瑞英语立志成为“国内性价比最高的英语教育培训机构",
+	"type":"教育",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/104.jpg"
+},
+{
+	"company":"丽子美妆",
+	"Interview_evaluation":"37",
+	"position":"5",
+	"deal":"92%",
+	"intro":"由麻省理工博士创办，专注于售卖化妆品一百年，提供具竞争力薪酬、多种人性化组合福利、与美女一起工作机会",
+	"type":"移动互联网，电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/105.png"
+},
+{
+	"company":"in",
+	"Interview_evaluation":"350",
+	"position":"51",
+	"deal":"66%",
+	"intro":"我的生活in记，每个生活瞬间都值得被记录",
+	"type":"电子商务，广告推销",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/106.jpg"
+},
+{
+	"company":"买好车",
+	"Interview_evaluation":"27",
+	"position":"67",
+	"deal":"33%",
+	"intro":"国内最有趣的、最好玩汽车电商公司",
+	"type":"移动互联网，电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/107.png"
+},
+{
+	"company":"端点科技",
+	"Interview_evaluation":"61",
+	"position":"5",
+	"deal":"89%",
+	"intro":"做最好的软件公司，盈利，高成长空间，专注技术，全Mac办公，高福利，带薪年假，全员期权",
+	"type":"电子商务，O2O",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/108.png"
+},
+{
+	"company":"车蚂蚁",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/109.jpg"
+},
+{
+	"company":"米趣科技",
+	"Interview_evaluation":"99",
+	"position":"31",
+	"deal":"52%",
+	"intro":"一米阳光，因趣而生",
+	"type":"移动互联网",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/110.jpg"
+},
+{
+	"company":"脸脸",
+	"Interview_evaluation":"98",
+	"position":"5",
+	"deal":"97%",
+	"intro":"全球首款基于场所的生活社交APP",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/111.jpg"
+},
+{
+	"company":"大搜车",
+	"Interview_evaluation":"161",
+	"position":"54",
+	"deal":"79%",
+	"intro":"中国领先的二手车商服务平台，让天下车商没有难卖的车",
+	"type":"移动互联网，O2O",
+	"financing":"成熟型(C轮)",
+	"city":"杭州",
+	"imgsrc":"img/112.jpg"
+},
+{
+	"company":"淘维科技-专注企业服务",
+	"Interview_evaluation":"53",
+	"position":"17",
+	"deal":"97%",
+	"intro":"一群来自阿里、腾讯、百度的小伙伴，一款服务上万商户的产品，一个不为钱担忧不用融资的盈利能力",
+	"type":"移动互联网，电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/113.jpg"
+},
+{
+	"company":"车蚂蚁",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/114.jpg"
+},
+{
+	"company":"易露营",
+	"Interview_evaluation":"59",
+	"position":"10",
+	"deal":"37%",
+	"intro":"易露营，让露营如此简单！",
+	"type":"电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/115.png"
+},
+{
+	"company":"氢氦",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/116.jpg"
+}]
+},
+{
+	"items":[{
+	"company":"二维火",
+	"Interview_evaluation":"140",
+	"position":"68",
+	"deal":"74%",
+	"intro":"在移动互联网时代打造最具有价值的本地生活服务类产品",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/102.jpg"
+},
+{
+	"company":"米络科技（KK直播）",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/101.png"
+}
+
+,
+{
+	"company":"答疑君",
+	"Interview_evaluation":"33",
+	"position":"5",
+	"deal":"92%",
+	"intro":"名校家教第一品牌",
+	"type":"移动互联网",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/103.png"
+},
+{
+	"company":"伯瑞英语ABC360",
+	"Interview_evaluation":"31",
+	"position":"62",
+	"deal":"68%",
+	"intro":"English for All. 伯瑞英语立志成为“国内性价比最高的英语教育培训机构",
+	"type":"教育",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/104.jpg"
+},
+{
+	"company":"丽子美妆",
+	"Interview_evaluation":"37",
+	"position":"5",
+	"deal":"92%",
+	"intro":"由麻省理工博士创办，专注于售卖化妆品一百年，提供具竞争力薪酬、多种人性化组合福利、与美女一起工作机会",
+	"type":"移动互联网，电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/105.png"
+},
+{
+	"company":"in",
+	"Interview_evaluation":"350",
+	"position":"51",
+	"deal":"66%",
+	"intro":"我的生活in记，每个生活瞬间都值得被记录",
+	"type":"电子商务，广告推销",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/106.jpg"
+},
+{
+	"company":"买好车",
+	"Interview_evaluation":"27",
+	"position":"67",
+	"deal":"33%",
+	"intro":"国内最有趣的、最好玩汽车电商公司",
+	"type":"移动互联网，电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/107.png"
+},
+{
+	"company":"端点科技",
+	"Interview_evaluation":"61",
+	"position":"5",
+	"deal":"89%",
+	"intro":"做最好的软件公司，盈利，高成长空间，专注技术，全Mac办公，高福利，带薪年假，全员期权",
+	"type":"电子商务，O2O",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/108.png"
+},
+{
+	"company":"车蚂蚁",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/109.jpg"
+},
+{
+	"company":"米趣科技",
+	"Interview_evaluation":"99",
+	"position":"31",
+	"deal":"52%",
+	"intro":"一米阳光，因趣而生",
+	"type":"移动互联网",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/110.jpg"
+},
+{
+	"company":"脸脸",
+	"Interview_evaluation":"98",
+	"position":"5",
+	"deal":"97%",
+	"intro":"全球首款基于场所的生活社交APP",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/111.jpg"
+},
+{
+	"company":"大搜车",
+	"Interview_evaluation":"161",
+	"position":"54",
+	"deal":"79%",
+	"intro":"中国领先的二手车商服务平台，让天下车商没有难卖的车",
+	"type":"移动互联网，O2O",
+	"financing":"成熟型(C轮)",
+	"city":"杭州",
+	"imgsrc":"img/112.jpg"
+},
+{
+	"company":"淘维科技-专注企业服务",
+	"Interview_evaluation":"53",
+	"position":"17",
+	"deal":"97%",
+	"intro":"一群来自阿里、腾讯、百度的小伙伴，一款服务上万商户的产品，一个不为钱担忧不用融资的盈利能力",
+	"type":"移动互联网，电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/113.jpg"
+},
+{
+	"company":"车蚂蚁",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/114.jpg"
+},
+{
+	"company":"易露营",
+	"Interview_evaluation":"59",
+	"position":"10",
+	"deal":"37%",
+	"intro":"易露营，让露营如此简单！",
+	"type":"电子商务",
+	"financing":"成长型(A轮)",
+	"city":"杭州",
+	"imgsrc":"img/115.png"
+},
+{
+	"company":"氢氦",
+	"Interview_evaluation":"37",
+	"position":"37",
+	"deal":"40%",
+	"intro":"有温度的互联网车险",
+	"type":"移动互联网，O2O",
+	"financing":"成长型(B轮)",
+	"city":"杭州",
+	"imgsrc":"img/116.jpg"
+}]
+}
+
+
+]	
+	
+	}

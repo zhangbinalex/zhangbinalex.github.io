@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Shortcut Icon" href="img/82.ico">
+<title>找工作-互联网招聘求职网-拉勾网</title>
+<script src="jquery/jquery.js"></script>
+<script>
+$(window).ready(function(e) {
+ var otxt=$(".c_text");
+ otxt.each(function(index, element) {
+    $(this).click(function()
+	{
+		$(this).css("border-color","rgb(0,179,138)")
+		})
+	$(this).blur(function() {
+        $(this).css("border-color","white")
+    });  
+});
+	 var abtn=$(".r_type").children("input");
+	 abtn.each(function(index, element) {
+        $(this).click(function(e) {
+            abtn.each(function(index, element) {
+                $(this).removeClass("btn_active");
+				
+            });
+			$(this).addClass("btn_active");
+        });
+    });
+	var ali=$(".c_l").eq(0).find("li");
+	var apreg=$(".p_reg");
+	var ospan=$(".c_l_abs").eq(0);
+	var ophone=ali.eq(0).children("span");
+	var oemail=ali.eq(1).children("span");
+	ali.each(function(index, element) {
+        $(this).click(function(e) {
+            apreg.each(function(index, element) {
+                apreg.eq(index).addClass("hidden");
+            });
+			ali.each(function(index, element) {
+                ali.eq(index).removeClass("active");
+            });
+			apreg.eq(index).removeClass("hidden");
+			ali.eq(index).addClass("active");
+			if(index==0)
+			{
+				ospan.stop();
+				ospan.animate({left:0})
+				ophone.removeClass().addClass("phone");
+				oemail.removeClass().addClass("email1");
+				
+				}
+			else
+			{
+				ospan.stop();
+				ospan.animate({left:"150px"});
+				ophone.removeClass().addClass("phone1");
+				oemail.removeClass().addClass("email");}
+        });
+    });
+});
+ 
+</script>
+<style>
+*{padding:0;
+	margin:0;	}
+body
+{
+	padding:0;
+	margin:0;
+	font-size:14px;
+	font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    color: #333;
+    word-wrap: break-word;}
+::selection
+{
+	
+color:white;
+background:#00B38A;
+}
+
+::-moz-selection
+{
+color:white;
+background:#00B38A;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+	.top
+	{
+		position:relative;
+		height:323px;
+		background-color: #00b38a;}
+.content
+{
+	
+	    box-shadow: 0 0 5px rgba(0,0,0,.09);
+	    width: 556px;
+    margin: -168px auto 0 auto;
+    padding: 50px 47px 60px 57px;
+    background-color: #fff;
+	    position: relative;
+    z-index: 1;}
+.c_l
+{
+	width: 300px;
+    margin-right: 46px;
+	float:left}
+.c_l_check a
+{
+	    display: inline-block;
+    height: 48px;
+    width: 19px;
+    vertical-align: middle;
+    margin-left: 10px;
+	background:url(img/62.jpg) no-repeat center 15px;}
+.c_l_check
+{
+	
+	margin-top:19px;}
+.c_l_check img
+{
+	width:100px;
+	height:46px;
+	vertical-align:middle;}
+.m_code
+{
+	margin-top:21px;}
+.m_btn
+{
+	cursor:pointer;
+	float:left;
+	font-size: 14px;
+    width: 110px;
+	color: #fff;
+   font-family: Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+    background-color: #00b38a;
+	    line-height: 46px;
+    height: 46px;
+	border: 1px solid #00b38a;}
+.m_text
+{
+	float:left;
+	font-family: Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	width: 162px;
+	border-color: #f8f8f8;
+    background-color: #f8f8f8;
+	font-size: 14px;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+    line-height: 1;
+    
+	padding:0 13px;
+    vertical-align: middle;
+    color: #333;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    outline: 0;}
+.c_l_check input
+{   font-family: Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	width: 130px;
+	border-color: #f8f8f8;
+    background-color: #f8f8f8;
+	font-size: 14px;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+    line-height: 1;
+    
+	padding:0 13px;
+    vertical-align: middle;
+    color: #333;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    outline: 0;
+	}
+.c_l_name
+{
+	margin-top:29px;}
+.c_l_name input,.c_l_pass input
+{
+	    font-family: Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	width: 272px;
+	border-color: #f8f8f8;
+    background-color: #f8f8f8;
+	font-size: 14px;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+    line-height: 1;
+    
+	padding:0 13px;
+    vertical-align: middle;
+    color: #333;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    outline: 0;}
+.c_l_pass
+{
+	margin-top:20px;}
+.f_pass
+{
+	margin-top:15px;}
+.f_pass a
+{
+	position: relative;
+    float: right;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #00b38a;
+    
+    z-index: 3;}
+.login_btn
+{
+	margin-top:20px;}
+.login_btn input
+{
+	border-radius:2px;
+	font-family:Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	    font-size: 18px;
+    line-height: 46px;
+    height: 46px;
+	    color: #fff;
+    background-color: #00b38a;
+	    padding: 0 30px;
+    text-align: center;
+	border: 1px solid #00b38a;
+    outline: 0;
+	width: 100%;
+	cursor:pointer;}
+.reg
+
+{
+	margin-top:20px;}
+.reg p
+{
+	    text-align: center;color: #777;}
+.reg p a
+{
+	font-size: 16px;
+    display: inline-block;
+    text-decoration: underline;
+    color: #00b38a;
+    padding-right: 23px;
+	background:url(img/52.png) right center no-repeat;}
+.c_m
+{
+	float:left;
+	}
+.c_r h5
+{
+	margin-top:30px;;
+	font-weight:normal;
+	color: #777;
+	font-size: 14px;
+	margin-bottom:10px;}
+.login_a:hover
+{
+	text-decoration:underline;}
+.login_a
+{
+	text-decoration:none;
+	    display: inline-block;
+    height: 22px;
+    font-size: 16px;
+    color: #00b38a;
+    padding-right: 23px;
+    background:url(img/63.png) right center no-repeat;}
+.c_r li
+{
+	float:left;
+	width:44px;
+	height: 43px;
+    margin-right: 9px;}
+li
+{
+	list-style:none}
+a
+{
+	display:inline-block;}
+.l_sina
+{
+	    width: 44px;
+    height: 43px;
+	background:url(img/54.png) no-repeat}
+	.l_qq
+{
+	    width: 44px;
+    height: 43px;
+	background:url(img/55.png) no-repeat}
+	.l_wx
+{
+	    width: 44px;
+    height: 43px;
+	background:url(img/56.png) no-repeat}
+.c_r_ul
+{
+	margin-top:10px;
+	padding:0;}
+.c_r
+{
+	width: 150px;
+    margin-left: 46px;
+    color: #777;
+	float:left}
+.c_r .last
+{
+	margin-right:0;}
+.hidden
+{
+	display:none;}
+.qrcode
+{
+	margin-top:80px;
+	}
+.qrcode img
+{
+	width: 124px;
+    height: 124px;}
+.qrcode p
+{
+	margin-top:3px;
+	font-size: 12px;
+    display: inline-block;
+    padding-left: 6px;}
+.bottom
+{
+	    margin-top: 50px;
+    text-align: center;
+    color: #d1d1d1;
+	font-size:16px;}
+.top a
+{
+	background:url(img/58.png) no-repeat;
+	width:128px;
+	height:54px;
+	position:absolute;
+	top: 70px;
+    left: 136px;
+    display: inline-block;}
+.c_l .active
+{
+	color: #00b38a;}
+.c_l li
+{
+	font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 33px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;}
+.c_l li span
+{
+	    display: inline-block;
+    width: 16px;
+    height: 16px;	
+	}
+.phone1
+{
+	background:url(img/93.png) no-repeat 4px top;
+	vertical-align: -1px;
+	}
+.phone
+{
+	background:url(img/59.png) no-repeat 4px top;
+	vertical-align: -1px;
+	}
+.email1
+{
+	background:url(img/60.png) no-repeat left top;
+	vertical-align:middle;
+	}
+.email
+{
+	background:url(img/94.png) no-repeat left top;
+	vertical-align:middle;
+	}
+.r_type
+{
+	margin-top:20px;
+}
+.r_type input
+{
+	    font-family: Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	border-radius:2px;
+	background:white;
+	    line-height: 46px;
+    height: 46px;
+	padding: 0 30px;
+    text-align: center;
+	    width: 140px;
+    margin-top: 0;
+    margin-right: 15px;
+    color: #999;
+	border: 1px solid #dce4e6;
+    outline: 0;
+    
+    font-size: 14px;}
+
+.r_type .btn_active
+{
+	color: #333;
+    border-color: #00b38a;}
+.r_type .last_btn
+{
+	margin-right:0;}
+.confirm a
+{
+	text-decoration:none;
+	color: #00b38a;
+	    line-height: 14px;}
+.confirm
+{
+	font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+	    height: 19px;
+    line-height: 19px;
+    z-index: 2;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #777;
+	position:relative;
+	margin-top:20px;
+	}
+.con_check
+{
+	    zoom: 1;
+    width: 13px;
+    height: 13px;
+    opacity: 0;
+    outline: 0}
+.confirm span
+{
+	
+	background:url(img/64.png) no-repeat -13px 0px;;
+	    position: absolute;
+    z-index: 4;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 13px;
+    height: 16px;}
+label
+{
+	cursor: pointer;}
+.c_l ul
+{
+	
+	    border-bottom: 1px solid #ebebeb;
+	position:relative;}
+.c_l ul .c_l_abs
+{    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #00b38a;
+    width: 150px;
+    height: 1px;
+	}
+.c_l ul .c_l_abs:before
+{
+	position: absolute;
+    z-index: 2;
+    top: -12px;
+    left: 50%;
+    margin-left: -3px;
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #00b38a;}
+.c_l ul .c_l_abs:after
+{
+	    z-index: 3;
+    top: -10px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+	    position: absolute;
+		    left: 50%;
+    margin-left: -3px;
+    content: '';}
+</style>
+</head>
+<div class="top">
+	<a href="home.html"></a>
+</div>
+<div class="content clearfix">
+	<div class="c_l">
+    	<ul class="clearfix">
+        	<span class="c_l_abs">
+            
+            </span>
+        	<li class="active"><span class="phone"></span>
+					手机号码注册
+				</li>
+             <li><span class="email1"></span>
+             邮箱注册</li>
+        </ul>
+        <div class="p_reg">
+        <div class="c_l_name clearfix">
+        	<input class="c_text" type="text" placeholder="请输入常用手机号码" />
+        </div>
+        <div class="c_l_check">
+        	<input class="c_text" type="text" placeholder="请证明你不是机器人" /><img src="img/61.jpg" />
+            <a href="javascript:;"></a>
+        </div>
+        <div class="m_code clearfix">
+        	<input  class="m_text c_text" type="text" placeholder="请输入短信验证码" /><input class="m_btn" type="button"  value="获取验证码"/>
+        </div>
+        <div class="c_l_pass">
+        	<input class="c_text"type="password" placeholder="请输入密码" />
+        </div>
+        <div class="r_type">
+        <input type="button" value="找工作" />
+        <input class="last_btn" type="button" value="招人" />
+        </div>
+        <div class="confirm" style="margin-top:16px;">
+        	<span></span>
+        	<label for="checkbox" class="confirm_box"> 
+        	<input class="confirm_box con_check"  type="checkbox" checked="checked"  />我已阅读并同意
+            <a href="http://www.lagou.com/privacy.html">《拉勾用户协议》</a>
+            </label>
+        </div>
+        <div class="login_btn">
+        	<input type="submit" value="注&nbsp;册" />
+        </div>
+        </div>
+        <div class="p_reg hidden">
+        <div class="c_l_name clearfix">
+        	<input class="c_text" type="text" placeholder="请输入常用邮箱地址" />
+        </div>
+        
+        <div class="c_l_pass">
+        	<input class="c_text"type="password" placeholder="请输入密码" />
+        </div>
+        <div class="r_type">
+        <input type="button" value="找工作" />
+        <input class="last_btn" type="button" value="招人" />
+        </div>
+        <div class="confirm">
+        	<span></span>
+        	<label for="checkbox" class="confirm_box"> 
+        	<input class="confirm_box con_check"  type="checkbox" checked="checked"  />我已阅读并同意
+            <a href="http://www.lagou.com/privacy.html">《拉勾用户协议》</a>
+            </label>
+        </div>
+        <div class="login_btn">
+        	<input type="submit" value="注&nbsp;册" />
+        </div>
+        </div>
+       
+    </div>
+    <div class="c_m">
+    <img src="img/88.jpg" /></div>
+    <div class="c_r">
+    	<h5>已有拉勾帐号:</h5>
+        <a href="login.html" class="login_a">直接登录</a>
+    	<h5>使用以下帐号直接登录:</h5>
+        <ul class="clearfix c_r_ul">
+        	<li><a class="l_sina" href=""></a></li>
+            <li><a class="l_qq" href=""></a></li>
+            <li class="last"><a class="l_wx" href=""></a></li>
+        </ul>
+        <div class="qrcode">
+        	<img src="img/57.jpg" />
+            <p>[ 扫码下载拉勾APP ]</p>
+        </div>
+    </div>
+  
+</div>
+  <div class="bottom">— 专注互联网职业机会 —</div>
+<body>
+</body>
+</html>
