@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除苹果默认的菜单栏和工具栏-->
+<meta content="yes" name="apple-touch-fullscreen"><!-- 将网页在apple上全屏显示而非在浏览器-->
+<meta content="telephone=no,email=no" name="format-detection"><!--格式检测：禁止作为邮箱地址！禁止了把数字转化为拨号链接！-->
+<meta charset="utf-8">
+<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="Shortcut Icon" href="../favicon.png" type="image/x-icon"><!--网页的缩略图标-->
+<script >
+!function(){var a="@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",b=document.createElement("style");if(document.getElementsByTagName("head")[0].appendChild(b),b.styleSheet)b.styleSheet.disabled||(b.styleSheet.cssText=a);else try{b.innerHTML=a}catch(c){b.innerText=a}}();!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+
+</script>
+<script src="jquery.js" type="text/javascript">
+</script>
+<script>
+$(window).ready(function(e) {
+      var pageData = {
+  
+   
+    items:[{
+	"img":"img/1.jpg",
+      "company":"好好住",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 17:13",
+	  "salary":"15K-30K"
+    },
+	{
+		"img":"img/2.jpg",
+       "company":"滴滴出行",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 14:55",
+	  "salary":"20K-30K"
+    },
+	{
+		"img":"img/3.jpg",
+      "company":"滴滴出行",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 14:55",
+	  "salary":"20K-40K"
+    },
+	{
+		"img":"img/5.png",
+       "company":"爱奇艺",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 14:33",
+	  "salary":"20K-30K"
+    },
+	{
+		"img":"img/6.png",
+      "company":"动动",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 12:13",
+	  "salary":"15K-25K"
+    },
+	{
+		"img":"img/7.jpg",
+       "company":"探探",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"2016-8-31",
+	  "salary":"15K-25K"
+    },
+	{
+		"img":"img/8.jpg",
+       "company":"闪签科技（我再HCM）",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 11:43",
+	  "salary":"15K-30K"
+    },
+	{
+		"img":"img/9.png",
+       "company":"易点租",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 15:40",
+	  "salary":"20K-25K"
+    },
+	{
+		"img":"img/10.jpg",
+      "company":"联合征信",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"今天 07:39",
+	  "salary":"10K-20K"
+    },
+	{
+		"img":"img/11.png",
+       "company":"简单学习网",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"2016-09-01",
+	  "salary":"10K-15K"
+    },
+	{
+		"img":"img/12.jpg",
+       "company":"猪八戒网",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"2016-08-31",
+	  "salary":"15K-30K"
+    },
+	{"img":"img/1.jpg",
+       "company":"寄云科技",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"2016 09-01",
+	  "salary":"15K-25K"
+    },
+	{
+		"img":"img/2.jpg",
+      "company":"深度数据",
+	  "job":"前端开发工程师",
+	  "place":"[北京]",
+	  "time":"昨天 18:03",
+	  "salary":"8K-15K"
+    }
+	
+	]
+   
+  
+}
+var allnode="";
+	for(var i=0;i<pageData.items.length;i++)
+	{
+		var node='<li>\
+        	<div class="con_l">\
+            	<img class="l_img" src="'+pageData.items[i].img+'">\
+            </div>\
+            <div class="con_m">\
+            	<h3>'+pageData.items[i].company+'</h3>\
+                <p class="job_name">'+pageData.items[i].job+'<span>'+pageData.items[i].place+'</span></p>\
+                <div class="time">'+pageData.items[i].time+'</div>\
+            </div>\
+            <div class="con_r">\
+            	<div class="salary">'+pageData.items[i].salary+'</div>\
+            </div>\
+        </li>';
+		allnode+=node;
+		}
+		
+		var oul=document.getElementById("ull");
+		oul.innerHTML=allnode;
+});
+</script>
+<title>使用flexbile实现移动端网页开发</title>
+</head>
+<style>
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+body
+{
+	font-family: Helvetica;
+	margin:0;
+	padding:0;}
+	.header
+	{
+		height:1.2rem;
+		background-color:rgb(0,179,138);
+		text-align:center;
+		color:white;
+		font-size:0.5rem;
+		line-height:1.2rem;
+		
+		}
+	.wrap
+	{
+		line-height:1.2rem;
+		
+		height:1.2rem;}
+	.wrap span
+	{
+		display:inline-block;
+		width:6rem;
+		overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+		font-size:0.4rem;
+		margin-left:0.4rem;
+		
+	}
+	.wrap a
+	{
+		
+		margin-top:0.2rem;
+		height:0.8rem;
+		line-height:0.8rem;
+		display:inline-block;
+		text-align:center;
+		margin-right:0.35rem;
+		float:right;
+		width:1.8rem;
+		-moz-border-radius: 0.4rem; /* Firefox */
+ 	 	-webkit-border-radius: 0.4rem; /* Safari 和 Chrome */
+ 		 border-radius: 0.4rem; 
+		background-color:rgb(245,245,245);
+		color:rgb(0,179,138);
+		font-size:0.37rem;}
+	li
+	{
+		overflow:hidden;
+		height:70px;
+		border-top:1px solid rgb(232,232,232);
+		padding:15px 15px 5px 15px;
+		}
+	[data-dpr="2"] li
+	{
+		height:140px;
+		padding:30px 30px 10px 0;}
+	[data-dpr="3"] li
+	{
+		height:210px;
+		padding:45px 45px 15px 0;}
+	.con_l
+	{
+		float:left;
+		width:1.111rem;
+		height:1.111rem;
+		}
+	.con_l img
+	{
+		max-width:100%;}
+	.con_m
+	{
+		margin-left:0.204rem;
+		float:left;}
+	
+		
+	h3
+	{
+		font-weight:bold;
+		font-size:16px;}
+	[data-dpr="2"] h3
+	{
+		font-size:32px
+		}	
+	[data-dpr="3"] h3
+	{
+		font-size:48px
+		}
+	.job_name
+	{
+		
+		font-size:13px;
+		margin:7px 0px;}
+	[data-dpr="2"] .job_name
+	{
+		font-size:26px;
+		margin:14px 0px;
+		}
+		[data-dpr="3"] .job_name
+	{
+		font-size:39px;
+		margin:21px 0px;
+		}
+	.time
+	{
+		font-size:12px;
+		color:rgb(136,136,136);}
+	[data-dpr="2"] .time
+	{
+		font-size:24px
+		}
+	[data-dpr="3"] .time
+	{
+		font-size:36px
+		}
+	.salary
+	{
+		color:rgb(0,179,138);
+		float:right;
+		line-height:70px;
+		font-size:17px;
+		
+		}
+	[data-dpr="2"] .salary
+	{
+		
+		line-height:140px;
+		font-size:34px;
+		
+		}
+	[data-dpr="3"] .salary
+	{
+		
+		line-height:210px;
+		font-size:51px;
+		
+		}
+	li
+	{
+		list-style:none;}
+	.fix
+	{
+		width:100%;
+		z-index:100;
+		position:fixed;
+		bottom:1.233rem;
+		height:1.352rem;
+		padding:0.3rem 0.3rem;
+		background-color:rgba(0,0,0,0.85);
+		}
+	.f_l
+	{
+		border:1px solid rgba(0,0,0,0.85);
+		
+		height:1.2rem;
+		width:1.2rem;
+		float:left;
+		margin-right:0.2rem;
+		
+		}
+	.f_l img
+	{
+		width:100%;
+		
+			background:url(img/fix_l.png);
+			max-width:100%;}
+		.f_m
+		{
+			float:left;
+			color:white;
+			width:5rem;
+			height:2.648rem;
+			}
+		.f_m img
+		{
+			width:100%}
+		
+		
+		.p1
+		{
+			font-size:0.63rem;
+		}
+		.p2
+		{
+			color:rgb(143,143,143);
+			font-size:0.518rem;}
+		.f_r
+		{
+			margin-right:0.5rem;
+			float:right;
+			display:inline-block;
+			width:2.66rem;
+			height:1.281rem;}
+		.f_r img
+		{
+			width:100%;
+			height:100%;}
+		.f_abs
+		{
+			position:absolute;
+			right:0.8rem;
+			top:-0.6rem;
+			z-index:101;
+			width:1.5rem;
+			height:1.778rem;}
+		.f_abs img
+		{
+			width:100%;}
+		.footer
+		{
+			font-size:0.6rem;
+			    border-top: 1px solid #e8e8e8;
+			background-color:rgb(246,246,246);
+			text-align:center;
+			width:100%;
+			height:1.233rem;
+			position:fixed;
+			bottom:0;
+			line-height:1.233rem;
+			color: #c2cfcc;}
+		.footer>div
+		{
+			float:left;
+			width:33.3%;
+			}
+		.footer span
+		{
+			background-size:4.63rem 4.63rem;
+			display: inline-block;
+    width: 0.333rem;
+    height: 0.315rem;
+    margin-bottom: -0.056rem}
+	.span1
+	{
+		    background:url(img/4.png) no-repeat -32px -2.5px;
+			}
+	.span2
+	{
+		 background:url(img/4.png) no-repeat -14px -2.5px;
+		}
+	.span3
+	{
+		 background:url(img/4.png) no-repeat -52.5px -2px;
+		}
+</style>
+<body>
+	<div class="header">拉勾网</div>
+    <div class="wrap">
+    	<span>前端开发工程师/北京/没有要求/没有要求</span><a class="bian" href="">编辑</a>
+    </div>
+    <ul id="ull">
+    	
+    </ul>
+    <div class="fix clearfix">
+    	<div class="f_l">
+        	<img class="f_img" src="img/fix_l.png">
+        </div>
+        <div class="f_m">
+        	<img src="img/2.png">
+            
+        </div>
+        <div class="f_r"><img src="img/1.png"></div>
+        <div class="f_abs">
+        	<img src="img/3.png">
+        </div>
+    </div>
+    <div class="footer">
+    	<div class="job"><span class="span1"></span>职位</div>
+        <div class="search"><span class="span2"></span>搜索</div>
+        <div class="mine"><span class="span3"></span>我的</div>
+    </div>
+</body>
+</html>
